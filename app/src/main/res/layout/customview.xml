@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvConstrainLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingVertical="5dp">
+
+
+
+    <TextView
+        android:id="@+id/cvName"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Sheasdasd asd asd as"
+        android:textSize="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/cvNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="013122301230123"
+        android:textSize="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/cvName"
+        android:layout_marginLeft="10dp"
+        />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/cvImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/cvButton"
+        android:src="@drawable/ic_baseline_contacts_24"
+        android:layout_marginRight="60dp"
+        />
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/cvButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/ic_baseline_close_24"
+        android:clickable="true"
+        android:layout_marginRight="40dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
